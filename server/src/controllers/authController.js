@@ -19,8 +19,8 @@ export async function loginUser(req, res) {
 
     if (!password) {
       errors.push({ field: "password", message: "Password is Required" });
-    } else if (password.length > 6) {
-      errors.push({ field: "password", message: "Invalid password" });
+    } else if (password.length < 6) {
+      errors.push({ field: "password", message: "Password must be at least 6 characters" });
     }
 
     if (errors.length > 0) {
