@@ -47,7 +47,7 @@ function Home() {
       : usersWithOnlineStatus;
 
   const filteredUsers = usersWithUnreadCounts.filter((user) =>
-    user.name.toLowerCase().includes(searchTerm.toLowerCase())
+    user?.name?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const handleLogout = () => {
