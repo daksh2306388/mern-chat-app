@@ -82,7 +82,7 @@ function UsersList({ users }) {
           >
             <div className="relative">
               <div className="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-xl">
-                {user?.name?.charAt(0).toUpperCase()}
+                {user?.name?.charAt(0)?.toUpperCase() || 'U'}
               </div>
               {user?.isOnline && (
                 <span className="absolute bottom-1 right-1 w-3 h-3 bg-green-400 border-2 border-white rounded-full"></span>
