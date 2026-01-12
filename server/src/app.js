@@ -13,7 +13,7 @@ connectDB();
 // allowed frontend origins
 const allowedOrigins = [
   "http://localhost:5173", // local dev
-  "https://mern-chat-app-28fs.vercel.app", // production domain
+  "https://mern-chat-app-gamma-jet.vercel.app", // production domain
 ];
 
 // CORS setup
