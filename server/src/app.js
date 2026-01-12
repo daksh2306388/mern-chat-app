@@ -19,7 +19,11 @@ const allowedOrigins = [
 // CORS setup
 app.use(
   cors({
-    origin: "https://mern-chat-app-gamma-jet.vercel.app",
+    origin: [
+      "http://localhost:5173", 
+      "https://mern-chat-app-gamma-jet.vercel.app",
+      "https://mern-chat-h2gqaamxt-daksh-patels-projects-ef6df956.vercel.app"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
