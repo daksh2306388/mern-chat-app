@@ -4,7 +4,7 @@ export async function getAllUser(req, res) {
   const loginUserId = req.user?._id;
 
   try {
-    const allUser = await User.find({ _id: { $ne: loginUserId } });
+    const allUser = await User.find({ _id: { $ne: loginUserId } }).select("-password");
 
     return res.status(200).json({
       success: true,

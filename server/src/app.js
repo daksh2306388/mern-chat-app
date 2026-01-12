@@ -22,7 +22,8 @@ app.use(
     origin: [
       "http://localhost:5173", 
       "https://mern-chat-app-gamma-jet.vercel.app",
-      "https://mern-chat-h2gqaamxt-daksh-patels-projects-ef6df956.vercel.app"
+      "https://mern-chat-h2gqaamxt-daksh-patels-projects-ef6df956.vercel.app",
+      "https://mern-chat-d26z3ud8b-daksh-patels-projects-ef6df956.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
